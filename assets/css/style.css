@@ -12,6 +12,19 @@ body {
   color: #111;
   line-height: 1.6;
 }
+/* Site header */
+.site-header {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 64px;
+}
+
+.site-header h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
 
 /* Navigation */
 .nav {
@@ -41,8 +54,8 @@ body {
 }
 
 .home p {
-  font-size: 22px;
-  margin-bottom: 36px;
+  font-size: 26px;
+  margin-bottom: 40px;
 }
 
 /* Brand links */
