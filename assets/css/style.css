@@ -65,7 +65,24 @@ body {
   font-size: 22px;
   margin-bottom: 36px;
 }
+/* Inline logo links */
+.logo-link {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
 
+.logo-link:hover {
+  border-bottom: 1px solid #111;
+}
+
+/* Logo itself */
+.inline-logo {
+  height: 22px;
+  vertical-align: middle;
+  transition: all 0.2s ease;
+}
 /* Brand links */
 .brand-link {
   position: relative;
