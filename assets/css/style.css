@@ -57,8 +57,8 @@ body {
 /* Home layout */
 .home {
   max-width: 720px;
-  margin: 120px auto;
-  padding: 0 24px;
+  margin: 0 auto;
+  padding: 140px 24px 0;
 }
 
 .home p {
