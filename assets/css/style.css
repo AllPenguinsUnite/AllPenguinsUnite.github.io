@@ -79,7 +79,7 @@ body {
 
 /* Logo itself */
 .inline-logo {
-  height: 1em;
+  height: 1.05em;
   vertical-align: middle;
   transition: all 0.2s ease;
 }
@@ -88,6 +88,9 @@ body {
   position: relative;
   text-decoration: none;
   color: inherit;
+
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .brand-text {
