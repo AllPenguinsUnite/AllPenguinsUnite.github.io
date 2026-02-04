@@ -83,9 +83,9 @@ body {
 
 /* Logo itself */
 .inline-logo {
-  height: 1em;               /* exactly matches text size */
+  height: 1.25em;          /* compensate for SVG whitespace */
   width: auto;
-  vertical-align: -0.12em;   /* optical baseline correction */
+  vertical-align: -0.18em; /* optical baseline correction */
   transition: opacity 0.2s ease;
 }
 /* Brand links */
