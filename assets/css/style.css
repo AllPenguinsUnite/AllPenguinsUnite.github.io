@@ -83,6 +83,10 @@ body {
 /* Logo itself */
 .inline-logo {
   height: 1.3em;
+  
+  outline: 3px solid red;
+  background: yellow;
+  
   vertical-align: middle;
   transition: all 0.2s ease;
 }
