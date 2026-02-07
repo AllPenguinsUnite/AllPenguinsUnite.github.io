@@ -122,6 +122,10 @@ body {
   transform-origin: left center;
   vertical-align: baseline;      /* helps keep it predictable */
 }
+.after-logo-punct{
+  display: inline-block;
+  margin-left: 0.55em;  /* increase/decrease until it clears the logo */
+}
 
 /* Brand links */
 .brand-link {
