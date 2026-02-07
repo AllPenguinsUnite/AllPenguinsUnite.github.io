@@ -110,6 +110,9 @@ body {
 .philadelphia-mark {
   transform: translateY(0.03em) scale(1.5);
 }
+.movember-mark {
+  transform: translateY(0.04em) scale(1.1);
+}
 /* Brand links */
 .brand-link {
   position: relative;
