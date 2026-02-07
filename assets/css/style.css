@@ -112,7 +112,7 @@ body {
 }
 
 .movember-mark {
-  transform: translateY(0.10em) scale(2.8);
+  transform: translateY(0.06em) scale(2.8);
   transform-origin: left center;
 }
 
