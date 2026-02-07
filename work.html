@@ -28,71 +28,82 @@
     </div>
   </header>
 
-  <!-- Main content -->
+  <!-- Work logos -->
   <main class="work">
-    <header class="work-header">
-      <h1 class="work-title">Work</h1>
-      <p class="work-subtitle">
-        A selection of projects. Click through for the full breakdown.
-      </p>
-    </header>
+    <section class="work-logos">
 
-    <section class="work-grid" aria-label="Project list">
-      <!-- Project 1 -->
-      <a class="project-card" href="projects/project-1.html">
-        <div class="project-text">
-          <h2 class="project-title">Project 1</h2>
-          <p class="project-desc">Short one-liner about the idea / outcome.</p>
-          <p class="project-meta">Brand: Google • Role: Copy / Concept • 2026</p>
-        </div>
+      <a href="projects/project-1.html" class="logo-link">
+        <img
+          src="assets/images/google-black.svg"
+          data-color="assets/images/google-color.svg"
+          alt="Google"
+          class="inline-logo google-wordmark"
+        />
       </a>
 
-      <!-- Project 2 -->
-      <a class="project-card" href="projects/project-2.html">
-        <div class="project-text">
-          <h2 class="project-title">Project 2</h2>
-          <p class="project-desc">Short one-liner about the idea / outcome.</p>
-          <p class="project-meta">Brand: Hopper • Role: Copy / Concept • 2026</p>
-        </div>
+      <a href="projects/project-2.html" class="logo-link">
+        <img
+          src="assets/images/hopper-black.svg"
+          data-color="assets/images/hopper-color.svg"
+          alt="Hopper"
+          class="inline-logo hopper-wordmark"
+        />
       </a>
 
-      <!-- Project 3 -->
-      <a class="project-card" href="projects/project-3.html">
-        <div class="project-text">
-          <h2 class="project-title">Project 3</h2>
-          <p class="project-desc">Short one-liner about the idea / outcome.</p>
-          <p class="project-meta">Brand: Rockstar • Role: Copy / Concept • 2026</p>
-        </div>
+      <a href="projects/project-3.html" class="logo-link">
+        <img
+          src="assets/images/rockstar-black.png"
+          data-color="assets/images/rockstar-color.png"
+          alt="Rockstar"
+          class="inline-logo rockstar-mark"
+        />
       </a>
 
-      <!-- Project 4 -->
-      <a class="project-card" href="projects/project-4.html">
-        <div class="project-text">
-          <h2 class="project-title">Project 4</h2>
-          <p class="project-desc">Short one-liner about the idea / outcome.</p>
-          <p class="project-meta">Brand: Kraft • Role: Copy / Concept • 2026</p>
-        </div>
+      <a href="projects/project-4.html" class="logo-link">
+        <img
+          src="assets/images/kraft-black.png"
+          data-color="assets/images/kraft-color.png"
+          alt="Kraft"
+          class="inline-logo kraft-mark"
+        />
       </a>
 
-      <!-- Project X -->
-      <a class="project-card" href="projects/project-X.html">
-        <div class="project-text">
-          <h2 class="project-title">Project X</h2>
-          <p class="project-desc">Short one-liner about the idea / outcome.</p>
-          <p class="project-meta">Brand: Philadelphia • Role: Copy / Concept • 2026</p>
-        </div>
+      <a href="projects/project-X.html" class="logo-link">
+        <img
+          src="assets/images/philadelphia-black.svg"
+          data-color="assets/images/philadelphia-color.svg"
+          alt="Philadelphia"
+          class="inline-logo philadelphia-mark"
+        />
       </a>
 
-      <!-- Movember -->
-      <a class="project-card" href="projects/project-movember.html">
-        <div class="project-text">
-          <h2 class="project-title">Movember</h2>
-          <p class="project-desc">Short one-liner about the idea / outcome.</p>
-          <p class="project-meta">Brand: Movember • Role: Copy / Concept • 2026</p>
-        </div>
+      <a href="projects/project-movember.html" class="logo-link">
+        <img
+          src="assets/images/movember-black.svg"
+          data-color="assets/images/movember-color.svg"
+          alt="Movember"
+          class="inline-logo movember-mark"
+        />
       </a>
+
     </section>
   </main>
+
+  <!-- Logo hover swap (same as home page) -->
+  <script>
+    document.querySelectorAll('.inline-logo').forEach(logo => {
+      const black = logo.src;
+      const color = logo.dataset.color;
+
+      logo.addEventListener('mouseenter', () => {
+        logo.src = color;
+      });
+
+      logo.addEventListener('mouseleave', () => {
+        logo.src = black;
+      });
+    });
+  </script>
 
 </body>
 </html>
