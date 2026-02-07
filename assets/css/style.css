@@ -196,36 +196,38 @@ body {
   line-height: 1;
 }
 
-/* BIGGER: base size dial */
+/* =========================
+   WORK PAGE — LOGO SIZING
+   ========================= */
+
+/* Base size (~1.75x) */
 .work .inline-logo{
-  height: 91px;  /* ~1.75x from your old ~52px */
+  height: 110px;
   width: auto;
   margin: 0;
   vertical-align: middle;
+  position: relative;
+  top: 10px; /* brings everything down visually */
 }
 
-/* PNG marks: keep presence */
-.work .rockstar-mark,
+/* Rockstar — ~1.5x presence */
+.work .rockstar-mark{
+  height: 135px;
+}
+
+/* Kraft — matches visual weight */
 .work .kraft-mark{
-  height: 105px;
+  height: 125px;
 }
 
-/* Movember: don't use homepage punctuation tricks here */
-.work .movember-link{ margin: 0; }
-.work .movember-link .movember-mark{
-  margin: 0;
-  transform: translateY(-0.10em) scale(1.0);
+/* Movember — hero scale (~2x) */
+.work .movember-mark{
+  height: 160px;
 }
 
-/* Responsive (optional) */
-@media (max-width: 900px){
-  .work-logos{
-    grid-template-columns: repeat(2, max-content);
-  }
-}
-@media (max-width: 560px){
-  .work-logos{
-    grid-template-columns: repeat(1, max-content);
-  }
-}
+/* Subtle per-logo optical nudges */
+.work .google-wordmark{ top: 6px; }
+.work .hopper-wordmark{ top: 6px; }
+.work .philadelphia-mark{ top: 8px; }
+
 
