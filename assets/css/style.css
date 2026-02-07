@@ -112,7 +112,10 @@ body {
 }
 
 .movember-mark {
-  transform: translateY(-0.01em) scale(2.8);
+  transform: scale(2.8);
+  transform-origin: left bottom;  /* makes vertical nudges predictable */
+  position: relative;             /* lets us nudge it */
+  top: -0.12em;                   /* <-- tweak this (try -0.10 to -0.18em) */
 }
 
 /* Brand links */
