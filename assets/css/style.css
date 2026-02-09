@@ -156,6 +156,62 @@ body {
   pointer-events: none;
 }
 
+/* --- Award: Clio Bronze --- */
+.award-clio{
+  position: relative;
+  display: inline-block;
+  --award-size: 2.2em;
+  --award-left: 75%;
+  --award-top: 50%;
+}
+
+.award-clio::after{
+  content: "";
+  position: absolute;
+  left: var(--award-left);
+  top: var(--award-top);
+  transform: translate(-50%, -50%);
+  width: var(--award-size);
+  height: var(--award-size);
+  background: url("../images/clio-bronze.png") no-repeat center / contain;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.award-clio > *{
+  position: relative;
+  z-index: 1;
+}
+
+.home .award-clio{
+  --award-size: 3.4em;
+  --award-left: 110%;
+}
+
+.work .award-clio{
+  --award-size: 130px;
+  --award-left: 80%;
+  --award-top: 52%;
+}
+
+.award-clio-title{
+  position: relative;
+  display: inline-block;
+}
+
+.award-clio-title::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  margin-left: 0.3em;
+  width: 1.9em;
+  height: 1.9em;
+  background: url("../images/clio-bronze.png") no-repeat center / contain;
+  pointer-events: none;
+}
+
 
 .google-wordmark {
   transform: translateY(0.05em) scale(1.5);
