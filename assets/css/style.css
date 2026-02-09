@@ -137,23 +137,25 @@ body {
 }
 
 /* --- D&AD pencil next to project title --- */
+/* Project page — D&AD pencil next to title */
 .award-dnad-title{
   position: relative;
   display: inline-block;
-  padding-right: 1.6em; /* gives breathing room */
+  padding-right: 2.4em; /* space reserved for the pencil */
 }
 
 .award-dnad-title::after{
   content: "";
   position: absolute;
-  right: -0.15em;
+  right: 0.2em;         /* pulls it BACK toward the text */
   top: 50%;
   transform: translateY(-50%);
-  width: 1.35em;   /* 👈 THIS is the key */
-  height: 1.35em;
+  width: 2.2em;         /* 🔥 THIS is the real size fix */
+  height: 2.2em;
   background: url("../images/dnad-yellow-pencil.png") no-repeat center / contain;
   pointer-events: none;
 }
+
 
 
 .google-wordmark {
