@@ -35,6 +35,7 @@
       <a href="projects/project-1.html" class="logo-link award-dnad">
   <img
     src="assets/images/google-black.svg"
+    data-color="assets/images/google-color.svg"
     alt="Google"
     class="inline-logo google-wordmark"
   />
@@ -104,6 +105,22 @@
       });
     });
   </script>
+<script>
+  document.querySelectorAll('.inline-logo').forEach(logo => {
+    const black = logo.src;
+    const color = logo.dataset.color;
+    if (!color) return; // <-- prevents broken hover if data-color is missing
 
+    logo.addEventListener('mouseenter', () => {
+      logo.src = color;
+    });
+
+    logo.addEventListener('mouseleave', () => {
+      logo.src = black;
+    });
+  });
+</script>
+
+  
 </body>
 </html>
