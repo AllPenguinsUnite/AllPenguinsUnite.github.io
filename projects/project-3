@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rockstar — NBC 6 Vice City</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="top-bar">
+    <nav class="nav-left">
+      <a href="../index.html">Home</a>
+      <a href="../work.html">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+
+    <div class="site-name">Shouvik Mukherjee</div>
+  </header>
+
+  <main class="project-page">
+    <!-- Title -->
+    <header class="project-hero">
+      <p class="project-brand">Rockstar</p>
+      <h1 class="project-title">NBC 6 Vice City</h1>
+
+      <p class="project-desc">
+        Fans were tired of GTA VI's release being constantly delayed. And on top of they had nothing except one trailer to keep their hype for the game alive.
+        With this campaign, Rockstar games fixes that by turning the whole city of Miami into a second trailer for GTA VI.
+      </p>
+    </header>
+
+    <!-- Film -->
+    <section class="project-block">
+      <div class="project-block-head">
+        <h2>Case Film</h2>
+      </div>
+
+      <div class="project-media project-media--video">
+        <!-- Replace src + poster with your actual file paths -->
+        <video controls playsinline preload="metadata" poster="../assets/images/nbc-6-vice-city-poster.jpg">
+          <source src="../assets/videos/nbc-6-vice-city-casefilm.mp4" type="video/mp4">
+          Sorry — your browser doesn’t support embedded videos.
+        </video>
+      </div>
+    </section>
+
+    <!-- Board -->
+    <section class="project-block">
+      <div class="project-block-head">
+        <h2>Idea Board</h2>
+      </div>
+
+      <div class="project-media">
+        <img src="../assets/images/nbc-6-vice-city-board.png" alt="NBC 6 Vice City idea board">
+      </div>
+    </section>
+
+    <!-- Credits -->
+    <footer class="project-credits">
+      <div class="credits-line">
+        <span class="credits-label">Copywriters</span>
+        <span class="credits-value">Tanguy Maimbourg, Raul Dias, Shouvik Mukherjee</span>
+      </div>
+      <div class="credits-line">
+        <span class="credits-label">Art Directors</span>
+        <span class="credits-value">Anna Freire, Mikhail Krivatkin</span>
+      </div>
+
+      <a class="project-back" href="../work.html">← Back to Work</a>
+    </footer>
+  </main>
+</body>
+</html>
