@@ -130,7 +130,7 @@ body {
 
 /* Work grid: size pencil relative to the big pixel logos */
 .work .award-dnad{
-  --pencil-size: 190px;  /* try 170–220px */
+  --pencil-size: 250px;  /* try 170–220px */
   --pencil-left: 112%;
   --pencil-top: 52%;
   --pencil-transform: translate(-50%, -50%);
