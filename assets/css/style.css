@@ -141,21 +141,20 @@ body {
 .award-dnad-title{
   position: relative;
   display: inline-block;
-  padding-right: 2.8em; /* space for pencil */
 }
 
 .award-dnad-title::after{
   content: "";
   position: absolute;
   top: 50%;
-  right: -0.3em; /* THIS NOW WORKS */
-  transform: translateY(-50%); /* Y only */
+  left: 100%;                 /* anchor to end of text */
+  transform: translateY(-50%);
+  margin-left: 0.1em;        /* THIS is your spacing control */
   width: 2.2em;
   height: 2.2em;
   background: url("../images/dnad-yellow-pencil.png") no-repeat center / contain;
   pointer-events: none;
 }
-
 
 
 .google-wordmark {
