@@ -141,16 +141,16 @@ body {
 .award-dnad-title{
   position: relative;
   display: inline-block;
-  padding-right: 2.4em; /* space reserved for the pencil */
+  padding-right: 2.8em; /* space for pencil */
 }
 
 .award-dnad-title::after{
   content: "";
   position: absolute;
-  right: 0em;         /* pulls it BACK toward the text */
   top: 50%;
-  transform: translateY(-50%);
-  width: 2.2em;         /* 🔥 THIS is the real size fix */
+  right: 0.1em; /* THIS NOW WORKS */
+  transform: translateY(-50%); /* Y only */
+  width: 2.2em;
   height: 2.2em;
   background: url("../images/dnad-yellow-pencil.png") no-repeat center / contain;
   pointer-events: none;
