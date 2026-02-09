@@ -148,7 +148,7 @@ body {
   content: "";
   position: absolute;
   top: 50%;
-  right: 0.1em; /* THIS NOW WORKS */
+  right: -0.3em; /* THIS NOW WORKS */
   transform: translateY(-50%); /* Y only */
   width: 2.2em;
   height: 2.2em;
