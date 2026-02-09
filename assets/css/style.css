@@ -572,11 +572,12 @@ body {
   }
 }
 
-/* Index page logo size tweaks */
+/* Index page logo size tweaks (slightly bigger) */
 .home .hopper-wordmark{
-  transform: translateY(0.04em) scale(1.7);
+  transform: translateY(0.04em) scale(1.8);
 }
 
 .home .rockstar-mark{
-  height: 1.8em;
+  height: 2.0em;
 }
+
