@@ -146,25 +146,6 @@ body {
   --pencil-transform: translate(-50%, -50%);
 }
 
-/* --- D&AD pencil next to project title --- */
-/* Project page — D&AD pencil next to title */
-.award-dnad-title{
-  position: relative;
-  display: inline-block;
-}
-
-.award-dnad-title::after{
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 100%;                 /* anchor to end of text */
-  transform: translateY(-50%);
-  margin-left: -0.4em;        /* THIS is your spacing control */
-  width: 2.2em;
-  height: 2.2em;
-  background: url("../images/dnad-yellow-pencil.png") no-repeat center / contain;
-  pointer-events: none;
-}
 
 /* --- Award: Clio Bronze --- */
 .award-clio{
@@ -202,24 +183,6 @@ body {
   --award-size: 130px;
   --award-left: 80%;
   --award-top: 52%;
-}
-
-.award-clio-title{
-  position: relative;
-  display: inline-block;
-}
-
-.award-clio-title::after{
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  transform: translateY(-50%);
-  margin-left: 0.3em;
-  width: 1.9em;
-  height: 1.9em;
-  background: url("../images/clio-bronze.png") no-repeat center / contain;
-  pointer-events: none;
 }
 
 
@@ -294,72 +257,6 @@ body {
   text-decoration: underline;
 }
 
-/* =========================
-   WORK PAGE (logos only)
-   ========================= */
-
-
-.work{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 140px 24px 40px;
-}
-
-/* 3 columns, centered */
-.work-logos{
-  display: grid;
-  grid-template-columns: repeat(3, max-content);
-  justify-content: center;
-  align-items: center;
-  gap: 84px 98px; /* row gap, column gap (tweak if you want) */
-}
-
-/* no underline/border hover on work grid */
-.work .logo-link,
-.work .logo-link:hover{
-  border-bottom: none;
-}
-
-/* remove sentence-style margins */
-.work .logo-link{
-  margin: 0;
-  padding: 8px 10px;
-  line-height: 1;
-}
-
-/* =========================
-   WORK PAGE — LOGO SIZING
-   ========================= */
-
-/* Base size (~1.75x) */
-.work .inline-logo{
-  height: 110px;
-  width: auto;
-  margin: 0;
-  vertical-align: middle;
-  position: relative;
-  top: 10px; /* brings everything down visually */
-}
-
-/* Rockstar — ~1.5x presence */
-.work .rockstar-mark{
-  height: 135px;
-}
-
-/* Kraft — matches visual weight */
-.work .kraft-mark{
-  height: 125px;
-}
-
-/* Movember — hero scale (~2x) */
-.work .movember-mark{
-  height: 160px;
-}
-
-/* Subtle per-logo optical nudges */
-.work .google-wordmark{ top: 6px; }
-.work .hopper-wordmark{ top: 6px; }
-.work .philadelphia-mark{ top: 8px; }
 
 /* =========================
    PROJECT PAGE (Robo Duck style)
@@ -391,6 +288,34 @@ body {
   letter-spacing: -0.04em;
   line-height: 1.02;
   margin-bottom: 16px;
+}
+
+/* Project title + award */
+
+.project-title-row{
+  display:flex;
+  align-items:flex-end;
+  gap:18px;
+  flex-wrap:wrap;
+
+  margin-bottom:16px;
+}
+
+.project-title{
+  margin-bottom:0;
+}
+
+.project-award{
+  font-family:'Inter', sans-serif;
+  font-size:14px;
+  font-weight:600;
+
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+
+  color:#777;
+
+  padding-bottom:6px;
 }
 
 .project-desc{
