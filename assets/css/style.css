@@ -627,3 +627,28 @@ body {
 .project-thumb:hover span {
   text-decoration: underline;
 }
+
+/* ==========================================================
+   WORK GALLERY RESPONSIVE
+========================================================== */
+
+/* Tablets */
+@media (max-width: 1000px){
+
+  .work-gallery{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 32px;
+  }
+
+}
+
+
+/* Phones */
+@media (max-width: 700px){
+
+  .work-gallery{
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+}
