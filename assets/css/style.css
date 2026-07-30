@@ -636,3 +636,48 @@ body {
     padding-top: 170px;        /* tweak 160–190 if you want */
   }
 }
+
+/* ==========================================================
+   WORK GALLERY
+========================================================== */
+
+.work-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 140px 24px 80px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 64px 48px;
+}
+
+.project-thumb {
+  display: block;
+  text-decoration: none;
+  color: #111;
+}
+
+.project-thumb img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+
+  transition: transform 0.35s ease;
+}
+
+.project-thumb span {
+  display: block;
+  margin-top: 18px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+.project-thumb:hover img {
+  transform: scale(1.03);
+}
+
+.project-thumb:hover span {
+  text-decoration: underline;
+}
